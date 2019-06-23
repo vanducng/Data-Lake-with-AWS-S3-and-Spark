@@ -26,9 +26,9 @@ The application's file is comprised of envent logs (historical music listening f
 ## Files in the repository
 1. `dl.cfg` contains configuration parameters to access AWS EMR and S3 bucket.
 2. `etl.py` load data from S3 to Spark Clusters on EMR. Data after processed are save back to S3 for further usage.
-3. `Sparkify Data Lake.ipynb` experiment of data expoloration, transformation, functions test on local Spark with a little set of data in folder `data`. The output tables are save in `./output_data`. The experiment on jupyter notebook is helpful before deploying on ASW.
+3. `Sparkify Data Lake.ipynb` experiment of data expoloration, transformation, functions test on local Spark with a little set of data in folder `data`. The output tables are save in `./output_data`. The experiment on jupyter notebook is helpful before deploying on AWS.
 
-```bash
+```tree
 .
 ├── data
 │   ├── log-data
