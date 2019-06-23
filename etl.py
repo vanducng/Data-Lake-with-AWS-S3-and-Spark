@@ -6,11 +6,10 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import udf
 
 config = configparser.ConfigParser()
-config.read('dl.cfg')
+config.read("dl.cfg")
 
-os.environ['AWS_ACCESS_KEY_ID']=config['AWS_ACCESS_KEY_ID']
-os.environ['AWS_SECRET_ACCESS_KEY']=config['AWS_SECRET_ACCESS_KEY']
-
+os.environ["AWS_ACCESS_KEY_ID"]=config["AWS"]["AWS_ACCESS_KEY_ID"]
+os.environ["AWS_SECRET_ACCESS_KEY"]=config["AWS"]["AWS_SECRET_ACCESS_KEY"]
 
 def create_spark_session():
     """
